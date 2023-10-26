@@ -8,15 +8,26 @@ export default defineConfig({
     nav: [
       {
         text: "前端",
-        link: "/",
+        link: "/frontend/1",
       },
       {
         text: "网络",
-        link: "/",
+        link: "/network",
       },
       {
         text: "随笔",
-        link: "/",
+        link: "/note",
+      },
+    ],
+    sidebar: [
+      {
+        title: "基础篇",
+        path: "/frontend/1",
+        collapsable: true,
+        children: [
+          { title: "第一篇", path: "/frontend/1" },
+          { title: "第二篇", path: "/frontend/2" },
+        ],
       },
     ],
   },
